@@ -1,0 +1,12 @@
+<div><%= form_tag('/products/add_to_cart') do %>
+<label>Enter A Product Name</label>
+<textarea id="product" name="product"></textarea>
+<input type="submit" value="add to cart">
+<% end %>
+</div>
+
+<div><h1> Cart </h1>
+<p><%= cart.each do |product| %></p>
+<p><%= product %></p>
+<% end %>
+</div>
